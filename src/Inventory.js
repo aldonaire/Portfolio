@@ -4,7 +4,7 @@ import inventoryItems from './inventoryItems';
 
 function Inventory({ onClose, onActivate, initialPosition, onPositionChange, zIndex }) {
   const [hoveredItem, setHoveredItem] = useState(null);
-  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+  // const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const slots = Array.from({ length: 24 }, (_, index) => inventoryItems[index] || null);
 
   return (
@@ -47,17 +47,18 @@ function Inventory({ onClose, onActivate, initialPosition, onPositionChange, zIn
             }}
             onMouseEnter={(event) => {
               if (item) {
-                const rect = event.currentTarget.getBoundingClientRect();
+                // const rect = event.currentTarget.getBoundingClientRect();
+                // setHoveredItem(item.name);
+                // setTooltipPosition({ x: rect.left, y: rect.top, width: rect.width, height: rect.height });
                 setHoveredItem(item.name);
-                setTooltipPosition({ x: rect.left, y: rect.top, width: rect.width, height: rect.height });
               }
             }}
-            onMouseMove={(event) => {
-              if (item) {
-                const rect = event.currentTarget.getBoundingClientRect();
-                setTooltipPosition({ x: rect.left, y: rect.top, width: rect.width, height: rect.height });
-              }
-            }}
+            // onMouseMove={(event) => {
+            //   if (item) {
+            //     const rect = event.currentTarget.getBoundingClientRect();
+            //     setTooltipPosition({ x: rect.left, y: rect.top, width: rect.width, height: rect.height });
+            //   }
+            // }}
             onMouseLeave={() => setHoveredItem(null)}
           >
             {item ? (
