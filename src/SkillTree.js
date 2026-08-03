@@ -250,7 +250,7 @@ function SkillTree({ onClose, onActivate, initialPosition, onPositionChange, zIn
                     const w = n.width || 96;
                   const h = 40;
                   const baseFontSize = 11;
-                  const minFontSize = 8;
+                  // const minFontSize = 8;
                     const measure = measuredText[n.id] || null;
                     const fontSize = measure ? measure.fontSize : baseFontSize;
                     const textProps = (measure && measure.needTextLength) ? { textLength: Math.max(0, w - 12), lengthAdjust: 'spacingAndGlyphs' } : {};
