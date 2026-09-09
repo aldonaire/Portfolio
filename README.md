@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Interactive RPG Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Full-stack developer • React specialist • RPG enthusiast*
+
+An RPG-inspired portfolio for **Aidan Lloyd Donaire**, built to present software projects, technical skills, experience, and contact information as an interactive game interface.
+
+**Live site:** [aldonaire.github.io/Portfolio](https://aldonaire.github.io/Portfolio/)
+
+## About
+
+Instead of a static resume page, this portfolio reimagines a developer profile as an RPG character sheet — projects become quests, skills become a skill tree, and experience becomes inventory. It's a way to make a portfolio memorable while still surfacing the same information a recruiter or hiring manager needs.
+
+## Panels
+
+- **Profile Screen** — animated HP, MP, and EXP bars
+- **Quest Log** — project descriptions, technologies, progress, image previews, and external links
+- **Skill Tree** — explore frontend, backend, API, database, programming, and game-development skills
+- **Inventory** — experience and background information
+- **Achievements** — highlights and milestones
+- **Guild Hall** — availability, preferred roles, services, email, GitHub, and LinkedIn links
+
+## Interactions & Tech Highlights
+
+- Draggable popup windows with saved positions and focus/z-index handling
+- Responsive layout powered by React Bootstrap
+
+## Tech Stack
+
+- React 19
+- JavaScript
+- Bootstrap 5 and React Bootstrap
+- React Draggable
+- Create React App
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+
+### Installation
+
+```bash
+git clone https://github.com/aldonaire/Portfolio.git
+cd Portfolio
+npm install
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+| Command         | Description                                        |
+| --------------- | --------------------------------------------------- |
+| `npm start`     | Starts the development server with hot reloading.    |
+| `npm run build` | Creates an optimized production build in `build/`.  |
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```text
+src/
+├── App.js              # Main profile screen and popup management
+├── QuestLog.js         # Project list and project detail view
+├── SkillTree.js        # Interactive skill graph
+├── Inventory.js        # Experience and background panel
+├── Achievements.js     # Achievements panel
+├── GuildHall.js        # Contact and services panel
+├── projectList.js      # Portfolio project data
+├── skillNodes.js       # Skill tree data
+└── inventoryItems.js   # Inventory data
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+The production site is configured with the GitHub Pages URL in `package.json`:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+https://aldonaire.github.io/Portfolio/
+```
 
-### `npm run build`
+Build the deployable files with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email:** aidan.donaire@gmail.com
+- **LinkedIn:** [linkedin.com/in/yourprofile](#)
+- **GitHub:** [github.com/aldonaire](https://github.com/aldonaire)
