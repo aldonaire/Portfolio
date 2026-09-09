@@ -8,6 +8,7 @@ import SkillTree from './SkillTree';
 import Inventory from './Inventory';
 import Achievements from './Achievements';
 import GuildHall from './GuildHall';
+import imagePath from "./utils/imagePath";
 
 function App() {
   const [openPopups, setOpenPopups] = useState({});
@@ -196,7 +197,7 @@ function App() {
               <Col className="d-flex justify-content-center" >
                 <div style={{ width: '200px', aspectRatio: '1 / 1', borderRadius: '50%', overflow: 'hidden', border: '4px solid #272736' }}>
                   <img
-                    src={process.env.PUBLIC_URL + "/home/MyPhoto.jpg"}
+                    src={imagePath("/home/MyPhoto.jpg")}
                     alt="About me"
                     className="img-fluid"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -258,7 +259,7 @@ as a Full Stack Developer.</div>
           <Col onClick={() => handleOpenPopup('QuestLog')} className="d-flex flex-column align-items-center">
             <div className="icon-card">
               <img
-                src={process.env.PUBLIC_URL + "/home/ProjectIcon.png"}
+                src={imagePath("/home/ProjectIcon.png")}
                 alt="Projects"
                 className="img-fluid"
                 style={{ width: '60px', height: '60px', objectFit: 'cover', imageRendering: 'pixelated'}}
@@ -269,7 +270,7 @@ as a Full Stack Developer.</div>
           <Col onClick={() => handleOpenPopup('SkillTree')} className="d-flex flex-column align-items-center">
             <div className="icon-card">
               <img
-                src={process.env.PUBLIC_URL + "/home/SkillIcon.png"}
+                src={imagePath("/home/SkillIcon.png")}
                 alt="Skills"
                 className="img-fluid"
                 style={{ width: '60px', height: '60px', objectFit: 'cover', imageRendering: 'pixelated' }}
@@ -280,7 +281,7 @@ as a Full Stack Developer.</div>
           <Col onClick={() => handleOpenPopup('Inventory')} className="d-flex flex-column align-items-center">
             <div className="icon-card">
               <img
-                src={process.env.PUBLIC_URL + "/home/ExperienceIcon.png"}
+                src={imagePath("/home/ExperienceIcon.png")}
                 alt="Experience"
                 className="img-fluid"
                 style={{ width: '60px', height: '60px', objectFit: 'cover', imageRendering: 'pixelated' }}
@@ -291,7 +292,7 @@ as a Full Stack Developer.</div>
           <Col onClick={() => handleOpenPopup('Achievements')} className="d-flex flex-column align-items-center">
             <div className="icon-card">
               <img
-                src={process.env.PUBLIC_URL + "/home/AchievementIcon.png"}
+                src={imagePath("/home/AchievementIcon.png")}
                 alt="Achievements"
                 className="img-fluid"
                 style={{ width: '60px', height: '60px', objectFit: 'cover', imageRendering: 'pixelated' }}
@@ -302,7 +303,7 @@ as a Full Stack Developer.</div>
           <Col onClick={() => handleOpenPopup('GuildHall')} className="d-flex flex-column align-items-center">
             <div className="icon-card">
               <img
-                src={process.env.PUBLIC_URL + "/home/ContactIcon.png"}
+                src={imagePath("/home/ContactIcon.png")}
                 alt="Contact"
                 className="img-fluid"
                 style={{ width: '60px', height: '60px', objectFit: 'cover', imageRendering: 'pixelated' }}

@@ -1,3 +1,4 @@
+import imagePath from "./utils/imagePath";
 const projectList = [
   {
     title: 'Physicochemical Analysis of Hydroponic System using Naive Bayes',
@@ -7,7 +8,20 @@ const projectList = [
     link: 'https://github.com/aldonaire/Physicochemical-Analysis-of-Hydroponic-System-using-Naive-Bayes',
     status: 'COMPLETED',
     progress: 100,
-    images: [process.env.PUBLIC_URL +"/projects/hydro/NB.png",process.env.PUBLIC_URL +"/projects/hydro/NB.png"],
+    images: [imagePath("/projects/hydro/NB.png"),imagePath("/projects/hydro/NB.png")],
+  },
+  {
+    title: '2027 Mercedes-Benz E 450 4MATIC®',
+    subtitle: 'A3 Brands Web Developer Practical Test',
+    description: 'A premium, responsive vehicle landing page created for the A3 Brands practical test, showcasing the 2027 Mercedes-Benz E 450 4MATIC®. The experience combines editorial automotive design with product-focused information, responsive layouts, interactive sections, performance specifications, and dealership-focused calls to action for Helms Bros., Inc.',
+    tags: ['React', 'Vite', 'JavaScript', 'CSS', 'Responsive Design', 'Vercel'],
+    link: 'https://mercedesbenz-two.vercel.app',
+    status: 'COMPLETED',
+    progress: 100,
+    images: [
+      imagePath("/projects/mercedes/mercedes01.png"),
+      imagePath("/projects/mercedes/mercedes02.png")
+    ],
   },
   {
     title: 'Interactive RPG Portfolio (This Website)',
@@ -16,8 +30,8 @@ const projectList = [
     tags: ['HTML', 'Bootstrap', 'React', 'JavaScript', 'CSS'],
     link: 'https://github.com/aldonaire/Portfolio',
     status: 'IN PROGRESS',
-    progress: 40,
-    images: [process.env.PUBLIC_URL +"/projects/rpg/1.png",process.env.PUBLIC_URL +"/projects/rpg/2.png"],
+    progress: 90,
+    images: [imagePath("/projects/rpg/1.png"),imagePath("/projects/rpg/2.png")],
   },
   {
     title: 'School Schedule Conflict Resolution System',
@@ -34,7 +48,7 @@ const projectList = [
     tags: ['Godot', 'GDScript', 'Aseprite', 'FL Studio'],
     status: 'IN PROGRESS',
     progress: 40,
-    images: [process.env.PUBLIC_URL +"/projects/element/1.png",process.env.PUBLIC_URL +"/projects/element/2.png"],
+    images: [imagePath("/projects/element/1.png"), imagePath("/projects/element/2.png")],
   },
   {
     title: 'Laundry Management System (Temporary Title)',
